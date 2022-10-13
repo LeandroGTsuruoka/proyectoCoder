@@ -1,0 +1,57 @@
+/* Este header aparecerá para pantallas de escritorio solamente */
+.headerGrande {
+    display: none;
+}
+.menuHamburguesa {
+    color: black;
+    background-color: #f6f9fc;
+    min-height: 48px;
+    a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px;
+        max-width: 200px;
+        font-variant: small-caps;
+        text-shadow: 1px 1px 17px gray;
+    }
+}
+.hamburguesa,.cruz{
+    height: 48px;
+}
+.menuHamburguesa {
+    input[type="checkbox"],.fa-bars,.fa-times {
+        position: absolute;
+        /* El absolute permite que tanto el icono de menu como la cruz estén en la misma posición que input */
+        top: 0;
+        width: 48px;
+        height: 48px;
+    }
+    .fa-bars, .fa-times{
+        pointer-events: none;
+    }
+    input[type="checkbox"] {
+        opacity: 0;
+    }
+    nav {
+        display: none;
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    input:checked~nav {
+        display: flex;
+    }
+    input:checked~.fa-bars {
+        display: none;
+    }
+    input:not(:checked)~.fa-times {
+        display: none;
+    }
+}
+/* Este codigo es para que no aparezcan a menos que lo indique la media query */
+.logoHeader,.logoHamburguesa {
+    display: none;
+}

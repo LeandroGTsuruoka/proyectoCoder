@@ -1,0 +1,77 @@
+.logo {
+    height: 4em;
+}
+
+.titulo {
+    @include flex(row, center, center);
+    width: 100%;
+}
+
+.carrusel {
+    width: 80%;
+    margin: auto
+}
+
+.tituloSeccion {
+    border-bottom: solid 1px lightskyblue;
+    display: flex;
+}
+
+.articulo {
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+
+    h2 {
+        background-color: red;
+        color: white;
+        font-style: italic;
+        padding: 0.5vh;
+    }
+
+    h3 {
+        padding: 0.1vh 0px;
+    }
+
+    p {
+        padding: 0.05vh 0px;
+    }
+
+    a {
+        text-decoration: underline;
+        color: red;
+    }
+}
+
+.segundaSeccion {
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.imagenNoticia {
+    margin-top: 15px;
+    @include flex(column,center,flex-start)
+}
+
+.jupiterNoticia {
+    width: 80%;
+}
+
+.fuenteImagen {
+    font-style: italic;
+}
+
+aside {
+    @include flex(column,normal,center);
+    margin: 0;
+}
+
+.curiosidad {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.curiosidadImagen {
+    margin: 10px;
+    width: 70%;
+}

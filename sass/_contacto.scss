@@ -1,0 +1,41 @@
+.formulario {
+    @include flex(row,center,flex-start)
+}
+form {
+    @include flex(column,center,flex-start);
+    width: 50%;
+    min-width: 250px;
+    padding: 2vw;
+    margin: 4vw;
+    border: solid 1px black;
+    border-radius: 15px;
+    p {
+        @include flex(row,center,flex-start);
+        font-size: 25px;
+        padding: 15px;
+    }
+}
+.formularioInput {
+    @include flex(column,space-between,flex-start);
+    padding: 5px;
+    width: 100%;
+    input {
+        width: 100%;
+    }
+}
+textarea {
+    width: 100%;
+}
+.boton input {
+    width: 60px;
+}
+
+@media (min-width:600px) {
+    
+    .formularioInput {
+        @include flex(row,space-between,flex-start);
+        input {
+            width: 60%;
+        }
+    }
+}

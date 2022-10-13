@@ -1,0 +1,18 @@
+@import "general";
+@import "operaciones";
+@import "header";
+@import "index";
+@import "footer";
+
+@import "link";
+@import "contacto";
+@import "novedades";
+
+.nosotros{
+    width: 70%;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+@import "media";

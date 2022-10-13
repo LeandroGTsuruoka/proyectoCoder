@@ -1,0 +1,42 @@
+.accordion{
+    width: 75%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    .canales{
+        display: flex;
+        flex-direction: column;
+        .contenedorCanal{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 1em;
+            .quantum,.robot,.minFisica,.minTierra,.kurzgesagt,.scishow{
+                display:flex;
+                flex-direction: column;
+                margin-left: 20px;
+            }
+        }
+        .imgCanal{
+            width: calc(3em + 5vw);
+        }
+        a{
+            color: blue;
+            font-weight: bold;
+        }
+        p{
+            color: black;
+        }
+    }
+}
+
+@media (min-width:300px){
+    .contenedorCanal{
+        flex-wrap: nowrap !important;
+        justify-content: flex-start !important;
+        /* Coloco el !important ya que sino no toma efecto el cambio en el flex-wrap ni en justify-content */
+    }
+}
+

@@ -1,0 +1,46 @@
+footer {
+    @include flex(column,space-evenly,normal);
+    color: white;
+    ul {
+        list-style-type: none;
+        @extend footer;
+        justify-content: center;
+        font-weight: bold;
+        a {
+            color: white;
+        }
+    }
+    width: 100%;
+    background-color: #123456;
+}
+
+.pieSecciones {
+    display: none;
+}
+.piePagina {
+    @include flex(row,space-evenly,normal);
+    padding: 2.5vh;
+}
+.redes {
+    @include flex(column,center,center);
+}
+.logoRedes {
+    @include flex(row,normal,flex-start);
+    flex-wrap: wrap;
+    a {
+        margin-right: 30px;
+    }
+}
+.iconoRedes {
+    height: 8vh;
+}
+.copyright {
+    padding: 0.4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.barraFooter {
+    width: 75%;
+    margin-bottom: 20px;
+}
