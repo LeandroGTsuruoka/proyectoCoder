@@ -131,8 +131,14 @@ header {
   align-items: flex-start;
 }
 
-.jupiterNoticia {
+.imagenArticulo {
   width: 80%;
+}
+
+.imagenSites {
+  width: 95%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .fuenteImagen {
