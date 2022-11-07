@@ -31,7 +31,7 @@
         }
     }
 }
-
+/* Esta media es particular para evitar el overflow del footer para los logos de las redes sociales */
 @media (min-width:300px){
     .contenedorCanal{
         flex-wrap: nowrap !important;

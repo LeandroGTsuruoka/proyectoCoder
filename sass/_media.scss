@@ -1,4 +1,4 @@
-@media (min-width: 600px) {
+@media (min-width: 500px) {
     .logoBody {
         display: none;
     }
@@ -26,17 +26,53 @@
 
     .segundaSeccion {
         display: grid;
-        grid-template-columns: 5fr 3fr;
         column-gap: 5em;
         grid-template-areas:
+            "articulo"
+            "sidebar";
+    }
+
+    .novedad{
+        @include flex(row-reverse,center,center);
+    }
+}
+
+@media (min-width: 768px){
+    header{
+        background-image: url(../img/backgroundHeader.webp);
+        background-size: cover;
+    }
+    
+    .carousel-indicators{
+        bottom: 8rem;
+    }
+    .carousel-caption{
+        position: static;
+        color: black;
+    }
+
+    .segundaSeccion {
+        display: grid;
+        grid-template-columns: 5fr 3fr;
+        grid-template-areas:
             "articulo sidebar";
+    }
+
+    footer {
+        background-image: url(../img/backgroundFooter.webp);
+        background-size: cover;
+    }
+    .primeraSeccion {
+        background-image: url(../img/backgroundCarrusel.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
 @media (min-width: 1024px) {
     .carrusel {
         padding: 10px 30px 10px 30px;
-        background-color: rgb(243, 214, 174);
+        background-color: rgba(230, 243, 174, 0.986);
         max-width: 900px;
     }
     .menuHamburguesa {
@@ -49,47 +85,55 @@
         align-items: center;
     }
     header {
-        background-color: #f6f9fc;
         padding: 20px;
         border-bottom: 1px gray solid;
         top: 0px;
-    }
-    nav ul {
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-    }
-    nav li {
-        width: 100%;
     }
     a {
         text-decoration: none;
         color: black;
     }
     nav {
-        a {
-        height: 50px;
-        font-size: 25px;
-        padding: 5px;
-        margin-left: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            .logo {
+                height: 7em;
+            }
+            a {
+                height: 3.1em;
+                font-size: 1.5em;
+                margin-left: 2em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
             a:hover {
-            background-color: #cbd7e4;
+                background-color: #cbd7e4;
             }
         }
     }
     .logoHeader {
         display: block;
     }
-    nav a
-    .logo {
-        height: 7em;
-    }
+    
     .pieSecciones{
         display: flex;
+    }
+    
+    .novedad{
+        p{
+            display: block;
+            margin-top: 2em;
+            font-weight: 500;
+        }
+        a{
+            text-decoration: underline;
+        }
+        @include flex(column,center,center);
     }
 }

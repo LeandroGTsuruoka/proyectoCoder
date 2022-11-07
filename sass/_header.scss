@@ -1,10 +1,13 @@
 /* Este header aparecerá para pantallas de escritorio solamente */
+header{
+    background-color: #f6f9fc;
+}
 .headerGrande {
     display: none;
 }
+
 .menuHamburguesa {
     color: black;
-    background-color: #f6f9fc;
     min-height: 48px;
     a {
         text-decoration: none;
@@ -41,6 +44,7 @@
             flex-direction: column;
         }
     }
+    
     input:checked~nav {
         display: flex;
     }
@@ -51,7 +55,7 @@
         display: none;
     }
 }
-/* Este codigo es para que no aparezcan a menos que lo indique la media query */
+/* Este codigo es para que no aparezcan a menos que lo indique la media query correspondiente */
 .logoHeader,.logoHamburguesa {
     display: none;
 }

@@ -1,17 +1,17 @@
 footer {
     @include flex(column,space-evenly,normal);
     color: white;
+    background-color: #123456;
     ul {
         list-style-type: none;
-        @extend footer;
+        @include flex(column,space-evenly,normal);
         justify-content: center;
         font-weight: bold;
+        background-image: none;
         a {
             color: white;
         }
     }
-    width: 100%;
-    background-color: #123456;
 }
 
 .pieSecciones {

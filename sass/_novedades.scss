@@ -7,6 +7,8 @@
     border: solid 1px black;
     border-radius: 15px;
     padding: 2em;
+    text-align: center;
+
     h2{
         font-size: calc(1rem + .8vw)
     }
@@ -16,25 +18,5 @@
     }
     p{
         display: none;
-    }
-}
-
-@media (min-width:600px){
-    .novedad{
-        @include flex(row-reverse,center,center);
-    }
-}
-
-@media (min-width: 1024px){
-    .novedad{
-        p{
-            display: block;
-            margin-top: 2em;
-            font-weight: 500;
-        }
-        a{
-            text-decoration: underline;
-        }
-        @include flex(column,center,center);
     }
 }

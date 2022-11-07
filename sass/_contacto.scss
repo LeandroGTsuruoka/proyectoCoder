@@ -8,11 +8,15 @@ form {
     padding: 2vw;
     margin: 4vw;
     border: solid 1px black;
-    border-radius: 15px;
-    p {
+    border-radius: 1em;
+    h2{
         @include flex(row,center,flex-start);
-        font-size: 25px;
-        padding: 15px;
+        padding: 1em;
+        padding-top: 0px;
+    }
+    p {
+        @extend h2;
+        font-size: 1.5em;
     }
 }
 .formularioInput {
@@ -27,11 +31,12 @@ textarea {
     width: 100%;
 }
 .boton input {
-    width: 60px;
+    width: 4em;
+    padding: 5px;
+    margin: 5px;
 }
 
-@media (min-width:600px) {
-    
+@media (min-width:500px) {
     .formularioInput {
         @include flex(row,space-between,flex-start);
         input {
